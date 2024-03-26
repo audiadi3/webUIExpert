@@ -1,0 +1,48 @@
+.nav-bar{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #28231C;
+    color: white;
+    padding: 1px;
+    
+    
+    
+    
+    .wsname{
+       width: 50%;
+       font-size: 15px;
+       font-weight: bold;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .bar-options{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+        a{
+            text-decoration: none;
+            color: white;
+
+        }       
+        .login-btn{
+            background-color: #C1EEFF;
+            color: black;
+            padding: 1%;
+            font-size: 6px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10%;
+        }
+        .login-btn:hover{
+            background-color: #7cb9cf;
+        }
+      
+
+        
+    }
+}
