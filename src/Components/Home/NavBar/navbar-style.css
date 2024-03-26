@@ -1,42 +1,68 @@
 .nav-bar{
-    height: 10%;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     background-color: #28231C;
     color: white;
-    padding: 1px;
     
-    
-    
-    
-    .wsname{
-       width: 50%;
-       font-size: 15px;
-       font-weight: bold;
+    .heading{
+        font-size: 28px;
+        padding: 0 20px;
+        font-weight: 500;
        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
-    .bar-options{
+    @media screen and (max-width: 895px) {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .list{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        width: 50%;
+        justify-content: center;
+        font-size: 18px;
+        list-style: none;
+        width: fit-content;
+        gap: 30px;
+        visibility: hidden;
+        @media screen and (min-width: 896px){
+            visibility: visible !important;
+        }
+        @media screen and (max-width: 895px) {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            align-items: center;
+            background-color: #28231C;
+            width: 100%;
+            padding: 10px 0;
+            margin: 0;
+            border: 1px solid blue;
+            visibility: hidden;
+        }
+
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* justify-content: space-between; */
         a{
             text-decoration: none;
             color: white;
-
         }       
         .login-btn{
             background-color: #C1EEFF;
             color: black;
-            padding: 1%;
-            font-size: 6px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             border-radius: 10%;
+            font-size: 18px;
         }
         .login-btn:hover{
             background-color: #7cb9cf;
@@ -44,5 +70,29 @@
       
 
         
+    }
+    .menu-icon{
+        width: 30px;
+        height: 50px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        visibility: hidden;
+        span{
+            background-color: white;
+            width: 100%;
+            height: 2px;
+        }
+        @media screen and (max-width: 895px) {
+            visibility: visible;
+        }
+    }
+    .menu-icon:hover{
+        cursor: pointer;
     }
 }

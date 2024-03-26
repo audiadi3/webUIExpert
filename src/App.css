@@ -1,14 +1,7 @@
-*{
-    font-size: 8px;
-}
 .main-class{
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 1450px;
-    width: 506px;
     /* background-color: aqua; */
-    box-sizing: content-box;
-    
 }
